@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyBookList</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://bootswatch.com/4/yeti/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h1 class="text-center"><i class="fas fa-book-open text-primary"></i><strong> My<span
+            class="text-primary">Book</span>List
+    </strong></h1>
+    <hr>
+    <h5>Fill the form to add new Book (* are required fields) </h5>
+    <form id="book-form">
+        <div class="form-group">
+            <label for="title">Title*</label>
+            <input type="text" class="form-control" id="title">
+        </div>
+        <div class="form-group">
+            <label for="author">Author*</label>
+            <input type="text" class="form-control" id="author">
+        </div>
+        <div class="form-group">
+            <label for="isbn">ISBN*</label>
+            <input type="text" class="form-control" id="isbn">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-sm btn-primary">Add Book</button>
+        </div>
+    </form>
+    <table class="table table-striped mt-5">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="book-list">
+
+        </tbody>
+    </table>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
